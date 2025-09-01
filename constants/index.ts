@@ -96,6 +96,16 @@ export const Skill_data = [
       src: "/x.png",
       url: "https://x.com/AnshuRaj0088", // Replace with your Twitter profile URL
     },
+    {
+      name: "Instagram",
+      src: "/instagram.svg",
+      url: "https://www.instagram.com/", // Replace with your Instagram profile URL
+    },
+    {
+      name: "YouTube",
+      src: "/youtube-svgrepo-com.svg",
+      url: "https://www.youtube.com/", // Replace with your YouTube channel URL
+    },
   ];
   
   export const ResumeLink = "/resume.pdf"; // Replace with your resume PDF path

@@ -54,19 +54,21 @@ const HeroContent = () => {
         
         <motion.div
           variants={slideInFromLeft(1)}
-          className="flex flex-row items-center gap-4"
+          className="flex flex-row items-center gap-6"
         >
           {/* Social Media Icons */}
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-4">
             {Socials.map((social) => (
               <Link href={social.url} key={social.name} target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={social.src}
-                  alt={social.name}
-                  width={24}
-                  height={24}
-                  className="cursor-pointer hover:scale-110 transition-all duration-300"
-                />
+                <div className="w-8 h-8 button-primary flex items-center justify-center rounded-lg cursor-pointer hover:scale-110 transition-all duration-300">
+                  <Image 
+                    src={social.src} 
+                    alt={social.name} 
+                    width={16} 
+                    height={16} 
+                    className="brightness-0 invert" 
+                  />
+                </div>
               </Link>
             ))}
           </div>
@@ -76,7 +78,7 @@ const HeroContent = () => {
             href={ResumeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="py-1.5 px-4 button-primary text-center text-white text-sm cursor-pointer rounded-lg hover:opacity-90 transition-all duration-300"
+            className="py-2 px-6 button-primary text-center text-white font-medium cursor-pointer rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105"
           >
             Resume
           </Link>
