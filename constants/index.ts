@@ -84,16 +84,21 @@ export const Skill_data = [
     {
       name: "LinkedIn",
       src: "/linkedin.svg.png",
+      url: "https://www.linkedin.com/in/anshu-raj-824b7a2b7/", // Replace with your LinkedIn profile URL
     },
     {
       name: "Github",
       src: "/github.png.png",
+      url: "https://github.com/anshuraj008", // Replace with your GitHub profile URL
     },
     {
       name: "Twitter",
       src: "/x.png",
+      url: "https://x.com/AnshuRaj0088", // Replace with your Twitter profile URL
     },
   ];
+  
+  export const ResumeLink = "/resume.pdf"; // Replace with your resume PDF path
   
   
   

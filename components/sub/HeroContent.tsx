@@ -9,6 +9,8 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { ResumeLink, Socials } from "@/constants";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
@@ -49,12 +51,36 @@ const HeroContent = () => {
           I&apos;m a Full Stack Web Developer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
-        <motion.a
+        
+        <motion.div
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="flex flex-row items-center gap-4"
         >
-          Resume
-        </motion.a>
+          {/* Social Media Icons */}
+          <div className="flex flex-row gap-3">
+            {Socials.map((social) => (
+              <Link href={social.url} key={social.name} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={social.src}
+                  alt={social.name}
+                  width={24}
+                  height={24}
+                  className="cursor-pointer hover:scale-110 transition-all duration-300"
+                />
+              </Link>
+            ))}
+          </div>
+          
+          {/* Resume Button */}
+          <Link 
+            href={ResumeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-1.5 px-4 button-primary text-center text-white text-sm cursor-pointer rounded-lg hover:opacity-90 transition-all duration-300"
+          >
+            Resume
+          </Link>
+        </motion.div>
       </div>
 
       <motion.div
