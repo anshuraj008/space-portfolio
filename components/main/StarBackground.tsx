@@ -8,9 +8,34 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const StarBackground = (props: any) => {
   const ref: any = useRef({});
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  );
+  const [sphere] = useState(() => {
+    // Create a new Float32Array with all zeros first
+    const positions = new Float32Array(5000 * 3);
+    
+    // Generate random positions using a safer approach
+    for (let i = 0; i < positions.length; i += 3) {
+      // Generate random coordinates between -1.2 and 1.2
+      positions[i] = (Math.random() - 0.5) * 2.4;
+      positions[i+1] = (Math.random() - 0.5) * 2.4;
+      positions[i+2] = (Math.random() - 0.5) * 2.4;
+      
+      // Normalize to create a sphere distribution
+      const distance = Math.sqrt(
+        positions[i] * positions[i] + 
+        positions[i+1] * positions[i+1] + 
+        positions[i+2] * positions[i+2]
+      );
+      
+      if (distance > 0) {
+        const scale = 1.2 * Math.random() / distance;
+        positions[i] *= scale;
+        positions[i+1] *= scale;
+        positions[i+2] *= scale;
+      }
+    }
+    
+    return positions;
+  });
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta/10;
@@ -29,7 +54,7 @@ const StarBackground = (props: any) => {
         >
             <PointMaterial
                 transparent
-                color="$fff"
+                color="#fff"
                 size={0.002}
                 sizeAttenuation={true}
                 depthWrite={false}
