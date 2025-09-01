@@ -53,14 +53,8 @@ const HeroContent = () => {
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn More!
+          Resume
         </motion.a>
-            <a href="https://www.linkedin.com/in/anshu-raj-04012a19b/" target="_blank">
-            <span className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              LinkedIn{" "}
-            </span>
-          </a>
       </div>
 
       <motion.div
