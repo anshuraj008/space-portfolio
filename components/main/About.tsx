@@ -81,7 +81,7 @@ const About = () => {
               Education
             </h4>
             <p className="text-gray-300">
-              Bachelor's in Computer Science with specialization in Web Technologies
+              Bachelor of Technology in Computer Science & Engineering from NSHM Knowledge Campus, Durgapur.
             </p>
           </motion.div>
 
@@ -95,7 +95,7 @@ const About = () => {
               Experience
             </h4>
             <p className="text-gray-300">
-              5+ years of professional experience in web development and application design
+              Full-Stack intern at Ardent CompuTech (July 2024 - Sep 2024). Developed and maintained web applications, collaborated with cross-functional teams, and contributed to the full software development lifecycle.
             </p>
           </motion.div>
 

@@ -99,7 +99,7 @@ export const Skill_data = [
     {
       name: "Instagram",
       src: "/instagram.svg",
-      url: "https://www.instagram.com/", // Replace with your Instagram profile URL
+      url: "https://www.instagram.com/_anshu_raj08/", // Replace with your Instagram profile URL
     },
     {
       name: "YouTube",
