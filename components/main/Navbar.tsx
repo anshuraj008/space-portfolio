@@ -22,13 +22,13 @@ const Navbar = () => {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          {/* <Image
+          <Image
             src="/NavLogo.png"
             alt="logo"
             width={50}
             height={50}
             className="cursor-pointer hover:animate-slowspin"
-          /> */}
+          />
 
           <motion.span 
             className="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
