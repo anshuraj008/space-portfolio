@@ -50,7 +50,7 @@ const About = () => {
             Full-Stack Developer with a passion for creating beautiful, functional websites
           </h3>
           <p className="text-gray-300 text-lg">
-            I'm Anshu Raj, a dedicated Full-Stack Developer with expertise in modern web technologies. 
+            I&#39;m Anshu Raj, a dedicated Full-Stack Developer with expertise in modern web technologies. 
             With a strong foundation in both front-end and back-end development, I create seamless, 
             responsive applications that deliver exceptional user experiences.
           </p>
@@ -60,7 +60,7 @@ const About = () => {
             and various other technologies that enable me to bring creative ideas to life.
           </p>
           <p className="text-gray-300 text-lg">
-            When I'm not coding, I enjoy exploring new technologies, contributing to open-source 
+            When I&#39;m not coding, I enjoy exploring new technologies, contributing to open-source 
             projects, and continuously expanding my knowledge in this ever-evolving field.
           </p>
         </motion.div>

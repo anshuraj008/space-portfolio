@@ -3,10 +3,13 @@
 import React, { useState, Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial} from "@react-three/drei";
+import type { Points as ThreePoints } from "three";
+import type { ComponentProps } from "react";
 
 
-const StarBackground = (props: any) => {
-  const ref: any = useRef({});
+type StarBackgroundProps = ComponentProps<typeof Points>;
+const StarBackground = (props: StarBackgroundProps) => {
+  const ref = useRef<ThreePoints | null>(null);
   const [sphere] = useState(() => {
     // Create a new Float32Array with all zeros first
     const positions = new Float32Array(5000 * 3);
@@ -37,9 +40,11 @@ const StarBackground = (props: any) => {
   });
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta/10;
-    ref.current.rotation.y -= delta/15;
-  })
+    const obj = ref.current;
+    if (!obj) return;
+    obj.rotation.x -= delta / 10;
+    obj.rotation.y -= delta / 15;
+  });
 
 
   return (
