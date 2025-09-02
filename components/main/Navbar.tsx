@@ -194,7 +194,7 @@ const Navbar = () => {
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
           <motion.div 
-            className="absolute top-[50px] left-0 right-0 bg-[#0300149e] backdrop-blur-lg border-t border-[#7042f861] md:hidden z-50"
+            className="absolute top-[50px] left-0 right-0 bg-[#0300149e] backdrop-blur-lg border-t border-[#7042f861] md:hidden z-50 overflow-hidden"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -204,7 +204,7 @@ const Navbar = () => {
                 href="#home" 
                 className="cursor-pointer w-full text-center py-1.5 relative text-sm" 
                 onClick={toggleMenu}
-                whileHover={{ scale: 1.05, x: 5 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
@@ -221,7 +221,7 @@ const Navbar = () => {
                 href="#about-me" 
                 className="cursor-pointer w-full text-center py-1.5 relative text-sm" 
                 onClick={toggleMenu}
-                whileHover={{ scale: 1.05, x: 5 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
@@ -238,7 +238,7 @@ const Navbar = () => {
                 href="#skills" 
                 className="cursor-pointer w-full text-center py-1.5 relative text-sm" 
                 onClick={toggleMenu}
-                whileHover={{ scale: 1.05, x: 5 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
@@ -255,7 +255,7 @@ const Navbar = () => {
                 href="#projects" 
                 className="cursor-pointer w-full text-center py-1.5 relative text-sm" 
                 onClick={toggleMenu}
-                whileHover={{ scale: 1.05, x: 5 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
@@ -272,7 +272,7 @@ const Navbar = () => {
                 href="#certificates" 
                 className="cursor-pointer w-full text-center py-1.5 relative text-sm" 
                 onClick={toggleMenu}
-                whileHover={{ scale: 1.05, x: 5 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
