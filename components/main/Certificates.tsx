@@ -48,56 +48,47 @@ const Certificates = () => {
           {/* Replace placeholders below with your real certificates */}
           <motion.div variants={item}>
             <CertificateCard
-              src="/CardImage.png"
-              title="Full-Stack Web Development"
-              issuer="Coursera"
+              src="/Internship1.png"
+              title="Full-Stack Internship"
+              issuer="Ardent CompuTech"
               date="2024"
-              href="/resume.pdf"
+              href="/Internship1.pdf"
             />
           </motion.div>
           <motion.div variants={item}>
             <CertificateCard
-              src="/CardImage.png"
+              src="/Internship2.png"
               title="React Advanced"
               issuer="Udemy"
               date="2023"
-              href="/resume.pdf"
+              href="/Internship2.pdf"
             />
           </motion.div>
           <motion.div variants={item}>
             <CertificateCard
-              src="/CardImage.png"
+              src="/Internship3.png"
               title="Cloud Fundamentals"
               issuer="Google Cloud"
               date="2023"
-              href="/resume.pdf"
+              href="/Internship3.pdf"
             />
           </motion.div>
           <motion.div variants={item}>
             <CertificateCard
-              src="/CardImage.png"
+              src="/Internship4.png"
               title="TypeScript Essentials"
               issuer="Microsoft Learn"
               date="2023"
-              href="/resume.pdf"
+              href="/Internship4.pdf"
             />
           </motion.div>
           <motion.div variants={item}>
             <CertificateCard
-              src="/CardImage.png"
+              src="/Internship5.png"
               title="Node.js Backend"
               issuer="Coursera"
               date="2022"
-              href="/resume.pdf"
-            />
-          </motion.div>
-          <motion.div variants={item}>
-            <CertificateCard
-              src="/CardImage.png"
-              title="Database Design"
-              issuer="Udemy"
-              date="2022"
-              href="/resume.pdf"
+              href="/Internship5.pdf"
             />
           </motion.div>
         </motion.div>
