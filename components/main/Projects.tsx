@@ -36,36 +36,42 @@ const Projects = () => {
             src="/Meet-ai.png"
             title="Meet AI Website"
             description="Developed a real-time meeting platform with an integrated AI agent that listens to conversations boosting meeting productivity by 30%."
+            href="https://meet-ai-lyart.vercel.app/"
           />
 
           <ProjectCard
             src="/Tour.png"
             title="Tour & Travel Website"
             description="Designed a full-stack booking website for tours & travel using MERN stack, improving user booking efficiency by 30%."
+            href="https://tour-management-eeyh.vercel.app/home"
           />
 
           <ProjectCard
             src="/Chat.png"
             title="Streamify Website"
             description="Built a real-time chat & video communication web application, users to connect globally boosted user engagement by 35%."
+            href="https://streamify-video-calls-2-i82e.onrender.com/signup"
           />
 
           <ProjectCard
             src="/Design.png"
             title="Retro Design Website"
             description="A visually nostalgic website inspired by retro aesthetics, featuring bold typography, vintage classic palettes and playful illustrations."
+            href=" https://lnkd.in/dYYSvFn3"
           />
 
           <ProjectCard
             src="/can.png"
             title="3D Animation Website"
             description="A web-based 3D animation project built using HTML, CSS, and JavaScript, showcasing interactive motion effects and immersive user experiences."
+            href="https://example.com/3d-animation"
           />
 
           <ProjectCard
             src="/Animation.png"
             title="Blue Print Website"
             description="A blueprint-style website designed with HTML, CSS, and JavaScript, interactive elements that mimic architectural design plans."
+            href="https://example.com/blue-print"
           />
         </motion.div>
       </div>

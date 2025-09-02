@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -6,11 +7,12 @@ interface Props {
   src: string;
   title: string;
   description: string;
+  href?: string; // optional link to project (site or repo)
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
-  return (
-    <motion.div 
+const ProjectCard = ({ src, title, description, href }: Props) => {
+  const card = (
+    <motion.div
       className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +29,7 @@ const ProjectCard = ({ src, title, description }: Props) => {
         />
       </div>
 
-      <motion.div 
+      <motion.div
         className="relative p-4"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -38,6 +40,22 @@ const ProjectCard = ({ src, title, description }: Props) => {
       </motion.div>
     </motion.div>
   );
+
+  if (href) {
+    const isExternal = href.startsWith("http");
+    return (
+      <Link
+        href={href}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        className="block"
+      >
+        {card}
+      </Link>
+    );
+  }
+
+  return card;
 };
 
 export default ProjectCard;
