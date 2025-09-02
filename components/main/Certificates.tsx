@@ -91,6 +91,15 @@ const Certificates = () => {
               href="/Internship5.pdf"
             />
           </motion.div>
+           <motion.div variants={item}>
+            <CertificateCard
+              src="/Internship6.png"
+              title="Node.js Backend"
+              issuer="Coursera"
+              date="2022"
+              href="/Internship6.pdf"
+            />
+          </motion.div>
         </motion.div>
       </div>
     </motion.section>
