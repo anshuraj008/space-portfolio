@@ -12,7 +12,7 @@ const Projects = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       id="projects"
-      className="w-full py-20"
+      className="w-full py-12 sm:py-16 md:py-20"
     >
       <div className="max-w-7xl mx-auto px-6">
         <motion.h2

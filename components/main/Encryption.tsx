@@ -10,7 +10,7 @@ const Encryption = () => {
 
   return (
     <motion.div 
-      className="flex flex-row relative items-center justify-center min-h-screen w-full h-full"
+      className="flex flex-row relative items-center justify-center w-full h-full min-h-[70vh] sm:min-h-[80vh] md:min-h-screen"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
