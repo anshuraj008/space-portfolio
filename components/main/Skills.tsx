@@ -10,6 +10,7 @@ import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
 
 const Skills = () => {
+  const allSkills = [...Frontend_skill, ...Backend_skill, ...Full_stack, ...Other_skill];
   return (
     <section
       id="skills"
@@ -18,46 +19,10 @@ const Skills = () => {
     >
       <SkillText />
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-4 place-items-center">
-        {Frontend_skill.map((image, index) => (
+      <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-4 sm:gap-5 mt-4 place-items-center">
+        {allSkills.map((image, index) => (
           <SkillDataProvider
-            key={`frontend-${index}`}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
-            index={index}
-            name={image.skill_name}
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-6 place-items-center">
-        {Backend_skill.map((image, index) => (
-          <SkillDataProvider
-            key={`backend-${index}`}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
-            index={index}
-            name={image.skill_name}
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-6 place-items-center">
-        {Full_stack.map((image, index) => (
-          <SkillDataProvider
-            key={`fullstack-${index}`}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
-            index={index}
-            name={image.skill_name}
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-6 place-items-center">
-        {Other_skill.map((image, index) => (
-          <SkillDataProvider
-            key={`other-${index}`}
+            key={`skill-${index}`}
             src={image.Image}
             width={image.width}
             height={image.height}
