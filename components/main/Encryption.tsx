@@ -57,7 +57,6 @@ const Encryption = () => {
               alt="Lock top"
               width={50}
               height={50}
-              className="w-[50px]"
             />
           </motion.div>
           <motion.div

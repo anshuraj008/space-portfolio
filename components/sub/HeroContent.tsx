@@ -87,6 +87,7 @@ const HeroContent = () => {
                       width={16} 
                       height={16} 
                       className="brightness-0 invert w-4 h-4" 
+                      loading="eager"
                     />
                   </div>
                 </Link>
@@ -139,7 +140,8 @@ const HeroContent = () => {
             alt="work icons"
             height={650}
             width={650}
-            className="drop-shadow-lg"
+            className="drop-shadow-lg w-auto h-auto"
+            priority
           />
         </motion.div>
       </motion.div>
