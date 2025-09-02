@@ -3,7 +3,7 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 import { motion } from "framer-motion";
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
+import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 
 const Projects = () => {
   return (

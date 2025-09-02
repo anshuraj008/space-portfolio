@@ -4,7 +4,7 @@ import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
 import About from "@/components/main/About";
 import Certificates from "@/components/main/Certificates";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
