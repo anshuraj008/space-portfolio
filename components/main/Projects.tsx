@@ -57,7 +57,7 @@ const Projects = () => {
             src="/Design.png"
             title="Retro Design Website"
             description="A visually nostalgic website inspired by retro aesthetics, featuring bold typography, vintage classic palettes and playful illustrations."
-            href=" https://lnkd.in/dYYSvFn3"
+            href="https://lnkd.in/dYYSvFn3"
           />
 
           <ProjectCard
