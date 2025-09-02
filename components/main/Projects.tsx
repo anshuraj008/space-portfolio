@@ -26,19 +26,39 @@ const Projects = () => {
         className="h-full w-full flex flex-col md:flex-row gap-10 px-10"
       >
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/Meet-ai.png"
+          title="Meet AI Website"
+          description="Developed a real-time meeting platform with an integrated AI agent that listens to conversations boosting meeting productivity by 30%."
         />
+
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/Tour.png"
+          title="Tour & Travel Website"
+          description="Designed a full-stack booking website for tours & travel using MERN stack, improving user booking efficiency by 30%."
         />
+
         <ProjectCard
-          src="/glaxy.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/Chat.png"
+          title="Streamify Website"
+          description="Built a real-time chat & video communication web application, users to connect globally boosted user engagement by 35%."
+        />
+
+          <ProjectCard
+          src="/Design.png"
+          title="Retro Design Website"
+          description="A visually nostalgic website inspired by retro aesthetics, featuring bold typography, vintage classic palettes and playful illustrations."
+        />
+
+          <ProjectCard
+          src="/can.png"
+          title="3D Animation Website"
+          description="A web-based 3D animation project built using HTML, CSS, and JavaScript, showcasing interactive motion effects and immersive user experiences."
+        />
+        
+          <ProjectCard
+          src="/Animation.png"
+          title="Blue Print Website"
+          description="A blueprint-style website designed with HTML, CSS, and JavaScript, interactive elements that mimic architectural design plans."
         />
       </motion.div>
     </motion.div>
