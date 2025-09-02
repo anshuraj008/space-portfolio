@@ -91,9 +91,6 @@ const Encryption = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-        <div className="cursive text-[20px] font-medium text-center text-gray-300">
-          Secure your data with end-to-end encryption
-        </div>
       </motion.div>
 
       <motion.div 

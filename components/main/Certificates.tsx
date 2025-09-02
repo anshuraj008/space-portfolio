@@ -25,7 +25,7 @@ const Certificates = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       id="certificates"
-      className="w-full py-20"
+      className="w-full py-20 -mt-6"
     >
       <div className="max-w-7xl mx-auto px-6">
         <motion.h2

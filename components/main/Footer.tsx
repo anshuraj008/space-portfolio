@@ -84,7 +84,7 @@ const Footer = () => {
           </ul>
 
           <div className="mt-6 text-sm text-gray-400">
-            <p>Contact: <a href="mailto:anshuraj122502@gmail.com" className="text-cyan-300 hover:underline">anshuraj@gmail.com</a></p>
+            <p>Contact: <a href="mailto:anshuraj122502@gmail.com" className="text-cyan-300 hover:underline">anshuraj122502@gmail.com</a></p>
           </div>
         </div>
 
@@ -107,7 +107,7 @@ const Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                placeholder="you@example.com"
+                placeholder="Email address"
                 className="w-full rounded-md bg-white/5 border border-white/15 px-3 py-2 text-sm outline-none focus:border-cyan-400/50"
               />
             </div>
