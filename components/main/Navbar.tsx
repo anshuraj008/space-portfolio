@@ -106,6 +106,21 @@ const Navbar = () => {
                 transition={{ duration: 0.3 }}
               />
             </motion.a>
+            <motion.a 
+              href="#certificates" 
+              className="cursor-pointer relative px-1.5 py-0.5"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              Certificates
+              <motion.span 
+                className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-purple-500 to-cyan-500"
+                initial={{ width: 0 }}
+                whileHover={{ width: "100%" }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.a>
           </div>
         </div>
 
@@ -245,6 +260,23 @@ const Navbar = () => {
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 <span className="relative z-10">Projects</span>
+                <motion.div 
+                  className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-md"
+                  initial={{ scaleX: 0 }}
+                  whileHover={{ scaleX: 1 }}
+                  transition={{ duration: 0.3 }}
+                  style={{ originX: 0 }}
+                />
+              </motion.a>
+              <motion.a 
+                href="#certificates" 
+                className="cursor-pointer w-full text-center py-1.5 relative text-sm" 
+                onClick={toggleMenu}
+                whileHover={{ scale: 1.05, x: 5 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <span className="relative z-10">Certificates</span>
                 <motion.div 
                   className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-md"
                   initial={{ scaleX: 0 }}
