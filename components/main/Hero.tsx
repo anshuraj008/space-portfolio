@@ -3,7 +3,7 @@ import HeroContent from '../sub/HeroContent'
 
 function Hero() {
   return (
-    <div className="relative flex flex-col h-full w-full">
+    <div id="home" className="relative flex flex-col h-full w-full">
          <video 
          autoPlay
          muted
