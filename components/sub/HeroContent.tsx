@@ -67,10 +67,10 @@ const HeroContent = () => {
         
         <motion.div
           variants={slideInFromLeft(1)}
-          className="flex flex-row items-center gap-6"
+          className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6"
         >
           {/* Social Media Icons */}
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-row flex-wrap gap-3">
             {Socials.map((social, index) => (
               <motion.div
                 key={social.name}
@@ -97,6 +97,7 @@ const HeroContent = () => {
           
           {/* Resume Button */}
           <motion.div
+            className="sm:ml-2"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.5, duration: 0.5 }}
@@ -107,7 +108,7 @@ const HeroContent = () => {
               href={ResumeLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2 px-6 button-primary text-center text-white font-medium cursor-pointer rounded-lg shadow-lg shadow-purple-500/30 transition-all duration-300 flex items-center gap-2"
+              className="py-2 px-5 sm:px-6 button-primary text-center text-white font-medium cursor-pointer rounded-lg shadow-lg shadow-purple-500/30 transition-all duration-300 flex items-center gap-2 w-full sm:w-auto"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
