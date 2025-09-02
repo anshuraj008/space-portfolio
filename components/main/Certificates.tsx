@@ -46,6 +46,7 @@ const Certificates = () => {
           className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6"
         >
           {/* Replace placeholders below with your real certificates */}
+
           <motion.div variants={item}>
             <CertificateCard
               src="/Internship1.png"
@@ -55,51 +56,57 @@ const Certificates = () => {
               href="/Internship1.pdf"
             />
           </motion.div>
-          <motion.div variants={item}>
-            <CertificateCard
-              src="/Internship2.png"
-              title="React Advanced"
-              issuer="Udemy"
-              date="2023"
-              href="/Internship2.pdf"
-            />
-          </motion.div>
+
           <motion.div variants={item}>
             <CertificateCard
               src="/Internship3.png"
-              title="Cloud Fundamentals"
-              issuer="Google Cloud"
+              title="Google Android Development"
+              issuer="EduSkills"
               date="2023"
               href="/Internship3.pdf"
             />
           </motion.div>
+
           <motion.div variants={item}>
             <CertificateCard
-              src="/Internship4.png"
-              title="TypeScript Essentials"
-              issuer="Microsoft Learn"
-              date="2023"
-              href="/Internship4.pdf"
+              src="/Internship2.png"
+              title="IBM"
+              issuer="SkillsBuild"
+              date="2025"
+              href="/Internship2.pdf"
             />
           </motion.div>
+
           <motion.div variants={item}>
-            <CertificateCard
-              src="/Internship5.png"
-              title="Node.js Backend"
-              issuer="Coursera"
-              date="2022"
-              href="/Internship5.pdf"
-            />
-          </motion.div>
-           <motion.div variants={item}>
             <CertificateCard
               src="/Internship6.png"
-              title="Node.js Backend"
-              issuer="Coursera"
+              title="Web Development"
+              issuer="Harkirat Institute"
               date="2022"
               href="/Internship6.pdf"
             />
           </motion.div>
+
+          <motion.div variants={item}>
+            <CertificateCard
+              src="/Internship5.png"
+              title="Project Management"
+              issuer="Ardent CompuTech"
+              date="2024"
+              href="/Internship5.pdf"
+            />
+          </motion.div>
+
+          <motion.div variants={item}>
+            <CertificateCard
+              src="/Internship4.png"
+              title="BGMI Esports"
+              issuer="NSHM College"
+              date="2025"
+              href="/Internship4.pdf"
+            />
+          </motion.div>
+
         </motion.div>
       </div>
     </motion.section>
