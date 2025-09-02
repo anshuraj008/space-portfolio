@@ -86,7 +86,7 @@ const HeroContent = () => {
                       alt={social.name} 
                       width={16} 
                       height={16} 
-                      className="brightness-0 invert" 
+                      className="brightness-0 invert w-4 h-4" 
                     />
                   </div>
                 </Link>
