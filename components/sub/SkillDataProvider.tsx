@@ -35,11 +35,16 @@ const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
       className="group flex flex-col items-center gap-2"
     >
       {/* Icon tile with consistent sizing + hover effects */}
-      <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-xl border border-[#7042f861] bg-[#0300145e] backdrop-blur-sm shadow-md shadow-[#2A0E61]/30 p-3 grid place-items-center transition-all duration-200 group-hover:border-purple-400/70 group-hover:shadow-lg group-hover:shadow-purple-500/20">
+      <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-xl border border-[#7042f861] bg-[#0300145e] backdrop-blur-sm shadow-md shadow-[#2A0E61]/30 p-3 grid place-items-center transition-all duration-200 group-hover:border-purple-400/70 group-hover:shadow-lg group-hover:shadow-purple-500/20 transform-gpu">
         <motion.div
-          whileHover={{ scale: 1.08 }}
-          transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-          className="w-full h-full"
+          initial={{ rotate: -180 }}
+          animate={inView ? { rotate: 0 } : { rotate: -180 }}
+          whileHover={{ scale: 1.08, rotate: 360 }}
+          transition={{
+            rotate: { duration: 0.6, delay: index * animationDelay, ease: "easeOut" },
+            scale: { type: "spring", stiffness: 400, damping: 20 },
+          }}
+          className="w-full h-full will-change-transform"
         >
           <Image
             src={src}
