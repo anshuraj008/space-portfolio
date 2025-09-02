@@ -1,45 +1,59 @@
-"use client"
+"use client";
 
-import React from 'react'
-import {motion} from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import Image from 'next/image';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 interface Props {
-    src: string;
-    width: number;
-    height: number;
-    index: number;
+  src: string;
+  width: number;
+  height: number;
+  index: number;
+  name?: string;
 }
 
-const SkillDataProvider = ({ src, width, height, index} : Props) => {
-    const {ref, inView} = useInView({
-        triggerOnce: true
-    })
+const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
+  const { ref, inView } = useInView({ triggerOnce: true });
 
-    const imageVariants = {
-        hidden: {opacity: 0},
-        visible: {opacity: 1}
-    }
+  const containerVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 },
+  };
 
-    const animationDelay = 0.3
+  const animationDelay = 0.05;
+
   return (
-  <motion.div
-  ref={ref}
-  initial="hidden"
-  variants={imageVariants}
-  animate={inView ? "visible" : "hidden"}
-  custom={index}
-  transition={{delay: index * animationDelay}}
-  >
-    <Image
-src={src}
-width={width}
-height={height}
-alt='skill image'
-    />
-  </motion.div>
-  )
-}
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      variants={containerVariants}
+      animate={inView ? "visible" : "hidden"}
+      custom={index}
+      transition={{ delay: index * animationDelay, duration: 0.35 }}
+      whileHover={{ scale: 1.06 }}
+      className="group flex flex-col items-center gap-2"
+    >
+      {/* Icon tile with consistent sizing */}
+      <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-xl border border-[#7042f861] bg-[#0300145e] backdrop-blur-sm shadow-md shadow-[#2A0E61]/30 p-3 grid place-items-center transition-colors group-hover:border-purple-400/60">
+        <Image
+          src={src}
+          width={width}
+          height={height}
+          alt={name ? `${name} logo` : "skill image"}
+          className="w-full h-full object-contain"
+        />
+        <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-br from-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+      </div>
+
+      {/* Label */}
+      {name && (
+        <span className="text-xs md:text-sm text-gray-300 text-center max-w-[6.5rem] truncate" title={name}>
+          {name}
+        </span>
+      )}
+    </motion.div>
+  );
+};
 
 export default SkillDataProvider;

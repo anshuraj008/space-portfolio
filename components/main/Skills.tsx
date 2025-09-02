@@ -18,47 +18,51 @@ const Skills = () => {
     >
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-4 place-items-center">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
-            key={index}
+            key={`frontend-${index}`}
             src={image.Image}
             width={image.width}
             height={image.height}
             index={index}
+            name={image.skill_name}
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-6 place-items-center">
         {Backend_skill.map((image, index) => (
           <SkillDataProvider
-            key={index}
+            key={`backend-${index}`}
             src={image.Image}
             width={image.width}
             height={image.height}
             index={index}
+            name={image.skill_name}
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-6 place-items-center">
         {Full_stack.map((image, index) => (
           <SkillDataProvider
-            key={index}
+            key={`fullstack-${index}`}
             src={image.Image}
             width={image.width}
             height={image.height}
             index={index}
+            name={image.skill_name}
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5 mt-6 place-items-center">
         {Other_skill.map((image, index) => (
           <SkillDataProvider
-            key={index}
+            key={`other-${index}`}
             src={image.Image}
             width={image.width}
             height={image.height}
             index={index}
+            name={image.skill_name}
           />
         ))}
       </div>
