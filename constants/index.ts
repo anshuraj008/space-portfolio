@@ -108,7 +108,7 @@ export const Skill_data = [
     },
   ];
   
-  export const ResumeLink = "/Anshu Raj_CV.pdf"; // Replace with your resume PDF path
+  export const ResumeLink = "/Anshu_Raj CV.pdf"; // Replace with your resume PDF path
   
   
   
